@@ -3,8 +3,10 @@ Matchers that allows deep search within hashes. Simply include the code in deep_
 
 # Example
 ```bash
-expect({ 'somewhere' => [{'something' => 'incredible'}, {'is' => 'waiting', 'to' => 'be'}],
-'milky' => 'way', 'an' => ['dromeda']}).to include_deeply('milky' => 'way', 'to' => 'be', 'an' => ['dromeda'])
+json_message = { 'somewhere' => [{'something' => 'incredible'}, {'is' => 'waiting', 'to' => 'be'}],
+'milky' => 'way', 'an' => ['dromeda']}
+
+expect(json_message).to include_deeply('milky' => 'way', 'to' => 'be', 'an' => ['dromeda'])
 ```
 
 #Coming In the Near Future
