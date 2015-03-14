@@ -8,5 +8,11 @@ expect({ 'somewhere' => [{'something' => 'incredible'}, {'is' => 'waiting', 'to'
 ```
 
 #Coming In the Near Future
-Search for single item within array(no need for key): expect(JSON.parse(message)).to include_deeply('dromeda')
-Search within another hash: expect(JSON.parse(message)).to include_deeply('something' => 'incredible').within('somewhere')
+Search for single item within array(no need for key)
+```bash
+expect(JSON.parse(message)).to include_deeply('dromeda')
+```
+Search within another hash
+```bash
+expect(JSON.parse(message)).to include_deeply('something' => 'incredible').within('somewhere')
+```
